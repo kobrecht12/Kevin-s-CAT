@@ -11,6 +11,7 @@ import { AvatarPage } from '../pages/avatar/avatar';
 import { TranscriptPage } from '../pages/transcript/transcript';
 import { LibraryPage } from '../pages/library/library';
 import { SavedPage } from '../pages/saved/saved';
+import { GlovePage } from '../pages/glove/glove';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SavedPage } from '../pages/saved/saved';
     AvatarPage,
     TranscriptPage,
     LibraryPage,
-    SavedPage
+    SavedPage,
+    GlovePage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { SavedPage } from '../pages/saved/saved';
     AvatarPage,
     TranscriptPage,
     LibraryPage,
-    SavedPage
+    SavedPage,
+    GlovePage
   ],
   providers: [
     StatusBar,

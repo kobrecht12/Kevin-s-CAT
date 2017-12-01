@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ConfirmPage } from '../confirm/confirm';
 import { LibraryPage } from '../library/library';
+import { GlovePage } from '../glove/glove';
 
 @Component({
   selector: 'page-home',
@@ -18,8 +19,8 @@ export class HomePage {
   onRecordButtonPressed() {
     if (this.recording == false ) {
       this.recording = true;
-      this.text = "\u25A0";      
-    } 
+      this.text = "\u25A0";
+    }
     else {this.recording = false;
       this.text = "\u25CF";
       this.navCtrl.push(ConfirmPage);
@@ -30,5 +31,7 @@ export class HomePage {
     this.navCtrl.push(LibraryPage);
   }
 
-
+  goToGlovePage() {
+    this.navCtrl.push(GlovePage);
+  }
 }
